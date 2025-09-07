@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steal Brainrot — Boutique officielle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-b from-indigo-950 to-slate-900 text-white font-sans">
+
+    <!-- Header -->
+    <header class="text-center py-10 bg-slate-900/60 shadow-lg">
+        <h1 class="text-4xl font-extrabold text-purple-400">Steal Brainrot</h1>
+        <p class="mt-2 text-slate-300 text-lg">Achetez votre Brainrot virtuel pour seulement <span
+                class="font-bold text-purple-300">5,00 €</span></p>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+        <!-- Left: Images + description -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Aperçu du Brainrot</h2>
+            <div class="flex flex-wrap gap-4 mb-6">
+                <img src="/images.jpeg" alt="Brainrot 1"
+                    class="w-32 h-32 rounded-xl border border-slate-700 bg-slate-800 object-contain shadow-md">
+                <img src="/images (1).jpeg" alt="Brainrot 2"
+                    class="w-32 h-32 rounded-xl border border-slate-700 bg-slate-800 object-contain shadow-md">
+                <img src="/images (2).jpeg" alt="Brainrot 3"
+                    class="w-32 h-32 rounded-xl border border-slate-700 bg-slate-800 object-contain shadow-md">
+            </div>
+            <p class="text-slate-300 leading-relaxed">
+                Le <strong>Brainrot virtuel</strong> est un objet unique du jeu <span
+                    class="text-purple-400 font-semibold">Steal a Brainrot</span>.
+                Après votre paiement, vous recevrez votre brainrot directement par mail.
+            </p>
+            <p class="mt-4 text-slate-400 text-sm">
+                🔒 Paiement sécurisé via PayPal — ⚡ Livraison rapide par e-mail — 💸 Remboursement garanti en cas de
+                problème.
+            </p>
+        </section>
+
+        <!-- Right: Form + PayPal -->
+        <section class="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-800">
+            <h2 class="text-xl font-semibold mb-6 text-center">Procédure de commande</h2>
+
+            <!-- PayPal bouton -->
+            <a href="https://www.paypal.me/SBrainrot/5" target="_blank"
+                class="block text-center bg-yellow-400 text-black font-bold py-3 px-4 rounded-lg hover:bg-yellow-300 transition mb-6">
+                💳 Payer 5 € via PayPal
+            </a>
+
+            <!-- Formulaire -->
+            <form action="https://formspree.io/f/xldwagoy" method="POST" class="space-y-5">
+                <div>
+                    <label for="name" class="block text-sm text-slate-400 mb-1">Pseudo</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:ring-2 focus:ring-purple-500">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm text-slate-400 mb-1">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:ring-2 focus:ring-purple-500">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm text-slate-400 mb-1">Message (optionnel)</label>
+                    <textarea id="message" name="message" rows="3"
+                        class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:ring-2 focus:ring-purple-500"></textarea>
+                </div>
+
+                <!-- Champs cachés -->
+                <input type="hidden" name="_subject" value="Commande Brainrot 5€">
+                <input type="hidden" name="item" value="Brainrot virtuel - 5€">
+
+                <button type="submit"
+                    class="w-full bg-purple-600 hover:bg-purple-500 font-semibold py-3 rounded-lg transition">
+                    ✉️ Envoyer ma demande
+                </button>
+            </form>
+
+            <p class="text-xs text-slate-500 mt-4 text-center">
+                Merci de payer d’abord via PayPal puis de remplir ce formulaire.<br>
+                En cas de problème, remboursement intégral sous 7 jours ouvrés.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-slate-400 text-sm py-8 border-t border-slate-800 mt-10">
+        © 2025 Steal Brainrot — Boutique virtuelle.<br>
+        Ce site n’est pas affilié à PayPal ni au jeu original.
+    </footer>
+
+</body>
+
+</html>
